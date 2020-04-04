@@ -5,19 +5,29 @@
   <meta charset="utf-8">
 
   <title>The Secret of Manor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/index.css">
   <script type="text/javascript" src="js/index.js"></script>
 </head>
 
 <body>
   <image src="images/env.png" alt="env.png" id = "env" class="full-screen-img"/>
-  <div class="click" >
+  <div id="click" >
   	<a href="#/" class="fullDiv" id="showQuestion1"> </a>
   </div>
 
   <div class="message">
-  	<span class="" id="question1"> Hi Robert, you received a letter...</span>
+  	<span class="fancy-font" id="question1"> Hi Robert, you received a letter...</span>
   </div>
+
+  <div id="button1" style="display:none">
+  	<button class="btn btn-dark fullDiv" id = "button1span" >Accept</button>
+  </div>
+
 </body>
 </html>

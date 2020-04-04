@@ -3,9 +3,11 @@
 	display:block;
 	width:100%;
 	z-index: -1;
+	overflow: hidden;
+	height:100vh;
 }
 
-.click{
+#click{
 	top:30%;
 	left:35%;
 	height:40%;
@@ -23,6 +25,12 @@
 	position:absolute;
 	z-index: 0;
 	/*background-color: red;*/
+	
+}
+
+.fancy-font{
+	font-family: marck script, cursive;
+	font-size: 2em;
 }
 
 .fullDiv{
@@ -32,4 +40,15 @@
   	top:0;
   	left: 0;
   	/*background-color: green;*/
+}
+
+#button1{
+	top:60%;
+	left:46.3%;
+	height:5%;
+	width:5%;
+	position:absolute;
+	z-index: 0;
+	background-color: red;
+	font-family: sans-serif;
 }
