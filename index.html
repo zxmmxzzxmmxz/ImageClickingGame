@@ -9,24 +9,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="css/index.css">
   <script type="text/javascript" src="js/index.js"></script>
 </head>
 
-<body>
-  <image src="images/env.png" alt="env.png" id = "env" class="full-screen-img"/>
-  <div id="click" >
-  	<a href="#/" class="fullDiv" id="showQuestion1"> </a>
+<body style="background-color: black">
+  
+  <div id="click" type="button" data-toggle="modal" data-target="#exampleModalCenter">
+
+  </div>
   </div>
 
-  <div class="message">
-  	<span class="fancy-font" id="question1"> Hi Robert, you received a letter...</span>
-  </div>
 
-  <div id="button1" style="display:none">
-  	<button class="btn btn-dark fullDiv" id = "button1span" >Accept</button>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+          <button type="button" class="btn absolute top" style="right:0" data-dismiss="modal" aria-label="Close">x</button>
+          <img src="images/letter.png" class="img-fluid" alt="Responsive image" style="width:498px">
+          <div class="absolute-header fancy-font">Dear Robert:</div>
+          <div class = "absolute-main fancy-font">You are inherited Edward's Manor<br><br> Do you want to accep it?</div>
+
+          <button type="button" class="btn btn-info absolute bottom right" id="toScene1">Accept</button>
+      </div>
+    </div>
   </div>
 
 </body>
