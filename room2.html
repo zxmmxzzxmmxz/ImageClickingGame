@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The Secret of Manor</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/room2.css">
+  <link rel="stylesheet" href="css/common.css">
+  <script type="text/javascript" src="js/room2.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+	
+<body>
+	<div class="main">
+		<img src = "images/room2.png" style="position:absolute;display:block;width:2000px;height:1500px; z-index: -1"/>
+		<div id="bed-message-toggle" class="toggle">
+			<div id="bed-message" ><p>This place is full of dust. No one has lived here for a long time</p></div>
+		</div>
+		
+		<img src="images/arrow.png" alt="arrow" id = "arrow" onclick="window.location.href='hallway.html'"/>
+
+		<div style="position:absolute; height:130px; width:200px;  top:960px;left:1540px" id="show-letter" data-toggle="modal" data-target="#exampleModalCenter" class="toggle"></div>
+	</div>
+
+
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" style="width:383px">
+
+         <img src="images/letter.png" class="img-fluid" alt="Responsive image" style="width:383px">
+         <div id = "letter-content"><br><br><br>The eldest brother is dead. I don't wanna be the next one.<br><br></div>
+         <div id="blle">1998-04-13	</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

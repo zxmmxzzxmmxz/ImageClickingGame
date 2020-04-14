@@ -1,26 +1,47 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+#arrow{
+	position:absolute;
+	display:block;
+	width:100px;
+	height:80px;
+	left:1600px;
+	top:1200px;
+}
+
+#arrow:hover{
+	cursor: pointer;
+}
 
 .full-screen-img{
-	postion:absolute;
+	position:absolute;
 	display:block;
-	width:100%;
-	height:100%;
+	width:2000px;
+	height:1500px;
 }
 
 .speech-bubble {
 	position: absolute;
 	background: #e4e4e4;
 	border-radius: .4em;
-	width:200px;
-	height:100px;
-	right:40%;
-	top:50%;
+	width:300px;
+	height:150px;
+	left:1200px;
+	top:500px;
+	font-family: 'IM Fell English', serif;
+	font-size:1.2em;
+	padding-left:10px;
 }
 
 .speech-bubble:after {
 	content: '';
 	position: absolute;
 	bottom: 0;
-	left: 50%;
+	left: 100px;
+	top:140px;
 	width: 0;
 	height: 0;
 	border: 65px solid transparent;
@@ -29,4 +50,30 @@
 	border-left: 0;
 	margin-left: -32.5px;
 	margin-bottom: -65px;
+}
+
+
+#toUpstairs{
+	position:absolute;
+	color:white;
+	border-color: white;
+	left:20%;
+	top:50%;
+}
+
+#toBasement{
+	position:absolute;
+	color:white;
+	border-color: white;
+	right:20%;
+	top:50%;
+}
+
+#choice{
+	font-family: 'IM Fell English', serif;
+	color:white;
+	font-size:1.5em;
+	position:absolute;
+	top:20%;
+	left:20%;
 }

@@ -3,13 +3,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+<meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet">
   <title>The Secret of Manor</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/scene2.css">
-
+  <link rel="stylesheet" href="css/room1.css">
+  <link rel="stylesheet" href="css/common.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
@@ -19,22 +20,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 
 </head>
-
+	
 <body>
-	<div>
-	  	<img src ="images/lobby.png" alt="lobby" class="full-screen-img"/>
-	  	<div class="speech-bubble">Welcome, I'm waiting for you for a long time. My name is Benson, I am the steward of the manor... but remember, you can NOT go to the basement </div>
-	  	<img src="images/arrow.png" alt="arrow" id = "arrow" data-toggle="modal" data-target="#exampleModalCenter"/>
-  	</div>
+	<div class="main">
+		<div style="position:absolute; height:100px; width:100px;  top:900px;left:1600px" id="show-letter" data-toggle="modal" data-target="#exampleModalCenter"></div>
+		<img src = "images/room1.jpg" style="position:absolute;display:block;width:2000px;height:1500px; z-index: -1;" />
+		<img src="images/arrow.png" alt="arrow" id = "arrow" onclick="window.location.href='hallway.html'"/>
+	</div>
 
-  	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-         <div style="height:300px; background-color: black">
-         	<div id = "choice">You have two choices:</div>
-         	<button type="button" class="btn  absolute bottom right" id="toUpstairs" onclick="window.location.href = 'hallway.html'">Upstairs</button>
-         	<button type="button" class="btn  absolute bottom right" id="toBasement" onclick="window.location.href = 'basement.html'">Basement</button>
-         </div>
+      <div class="modal-content" style="width:383px">
+
+         <img src="images/letter.png" class="img-fluid" alt="Responsive image" style="width:383px">
+         <div id = "letter-content">Dear Edward,<br><br><br>I'm gonna die. I hope you can take care of the children with your full of love. <br><br></div>
+         <div id="blle">Blle	</div>
       </div>
     </div>
   </div>

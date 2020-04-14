@@ -1,0 +1,94 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+
+.full-screen-img{
+	position:absolute;
+	display:block;
+	width:2000px;
+	height:1500px;
+	z-index: -1;	
+}
+
+#room1{
+	width:200px;
+	height:300px;
+	position:absolute;
+	top:100px;
+	left:290px;
+	/*background-color: black;*/
+	z-index: 3;	
+}
+#room1:hover{
+	cursor: pointer;
+}
+
+
+#room2{
+	width:200px;
+	height:270px;
+	position:absolute;
+	top:100px;
+	left:610px;
+	/*background-color: black;*/
+	z-index: 3;	
+}
+#room2:hover{
+	cursor: pointer;
+}
+
+#room3{
+	width:220px;
+	height:270px;
+	position:absolute;
+	top:50px;
+	left:1050px;
+	/*background-color: black;*/
+	z-index: 3;	
+}
+#room3:hover{
+	cursor: pointer;
+}
+
+#room4{
+	width:220px;
+	height:220px;
+	position:absolute;
+	top:50px;
+	left:1400px;
+	/*background-color: black;*/
+	z-index: 3;	
+}
+#room4:hover{
+	cursor: pointer;
+}
+
+#room5{
+	width:220px;
+	height:200px;
+	position:absolute;
+	top:50px;
+	left:1730px;
+	/*background-color: black;*/
+	z-index: 3;	
+}
+#room5:hover{
+	cursor: pointer;
+}
+
+
+#monica-message{
+	width:300px;
+	height:auto;
+	position: absolute;
+	top:300px;
+	left:1600px;
+	/*background-color: black;*/
+	text-align: center;
+	font-family: 'IM Fell English', serif;
+	font-size:1.5em;
+	color:white;
+	background: rgba(70, 0, 0, 0.8);
+}
