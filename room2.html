@@ -22,6 +22,7 @@
 	
 <body>
 	<div class="main">
+    <audio src="sound/pages.wav" id="audio"></audio>
 		<img src = "images/room2.png" style="position:absolute;display:block;width:2000px;height:1500px; z-index: -1"/>
 		<div id="bed-message-toggle" class="toggle">
 			<div id="bed-message" ><p>This place is full of dust. No one has lived here for a long time</p></div>
@@ -29,7 +30,7 @@
 		
 		<img src="images/arrow.png" alt="arrow" id = "arrow" onclick="window.location.href='hallway.html'"/>
 
-		<div style="position:absolute; height:130px; width:200px;  top:960px;left:1540px" id="show-letter" data-toggle="modal" data-target="#exampleModalCenter" class="toggle"></div>
+		<div style="position:absolute; height:130px; width:200px;  top:960px;left:1540px" id="show-letter" data-toggle="modal" data-target="#exampleModalCenter" class="toggle" onclick="document.getElementById('audio').play()"></div>
 	</div>
 
 

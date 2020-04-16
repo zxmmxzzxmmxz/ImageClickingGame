@@ -9,4 +9,7 @@ window.onload = function(){
 	sessionStorage.setItem("room5visited", "false");
 	sessionStorage.setItem("monica","Hi Robert, I am Monica, Nice to meet you but it's kinda dangerous here!");
 	sessionStorage.setItem("keyHere","false");
+	sessionStorage.setItem("hasLock","false");
+
+
 }

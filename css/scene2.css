@@ -25,14 +25,16 @@ body{
 
 .speech-bubble {
 	position: absolute;
-	background: #e4e4e4;
+	color:white;
+	padding:20px;
+	background: rgba(0,0,0);
 	border-radius: .4em;
 	width:300px;
-	height:150px;
+	height:auto;
 	left:1200px;
 	top:500px;
 	font-family: 'IM Fell English', serif;
-	font-size:1.2em;
+	font-size:1.3em;
 	padding-left:10px;
 }
 
@@ -41,11 +43,11 @@ body{
 	position: absolute;
 	bottom: 0;
 	left: 100px;
-	top:140px;
+	top:180px;
 	width: 0;
 	height: 0;
 	border: 65px solid transparent;
-	border-top-color: #e4e4e4;
+	border-top-color: rgba(0,0,0);
 	border-bottom: 0;
 	border-left: 0;
 	margin-left: -32.5px;

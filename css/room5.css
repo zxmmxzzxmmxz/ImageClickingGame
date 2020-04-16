@@ -21,16 +21,39 @@
 	opacity: 0;
 }
 
-#arrow-normal{
-	position:absolute;
-	display:block;
-	width:100px;
-	height:80px;
-	left:1710px;
-	top:1200px;
 
+
+#closet{
+	position:absolute;
+	display:none;
+	width:400px;
+	height:600px;
+	/*background-color: red;*/
+	left:200px;
+	top:250px;
 }
 
-#arrow-normal:hover{
-	cursor: pointer;
+#text{
+	font-family: 'IM Fell English', serif;
+	font-size: 1.5em;
+	color:white;
+	position: absolute;
+	display:block;
+	top:200px;
+}
+
+#toEnding3{
+	position:absolute;
+	color:white;
+	border-color: white;
+	left:10%;
+	top:300px;
+}
+
+#toBasement{
+	position:absolute;
+	color:white;
+	border-color: white;
+	right:10%;
+	top:300px;
 }

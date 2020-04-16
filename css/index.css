@@ -20,7 +20,7 @@
 }
 #blood{
 	position:absolute;
-	z-index:2;
+	z-index:1;
 	display:block;	
 	top:20%;
 	left:10%;
@@ -38,7 +38,7 @@
 	height:12%;
 	width:12%;
 	position:absolute;
-	z-index: 2;
+	z-index: -1;
 	margin:0;
 }
 
@@ -52,6 +52,7 @@
 	background-size: contain;
 	height:940px;
 	width:760px;
+	z-index: -1;
 }
 
 .absolute-header{
@@ -86,4 +87,33 @@
 	position: absolute;
 	right:10%;
 	bottom:10%;
+}
+
+
+#instruction{
+	display:block;
+	top:75%;
+	left:44%;
+	height:12%;
+	width:12%;
+	font-weight: bold;
+	background-color:transparent;
+	position:absolute;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:40px;
+	text-align: center;
+	z-index: 1;
+}
+#instruction:hover{
+	cursor:pointer;
+}
+
+.message-box{
+	color:black;
+	width:auto;
+	border: solid 2px black;
+
+	font-family: 'IM Fell English', serif;
+	font-size:1.3em;
 }

@@ -50,7 +50,34 @@ window.onload = function(){
 		window.location.href = "room4.html";
 	}
 
-	document.getElementById("monica-message-content").innerHTML = monica;
+	//document.getElementById("monica-message-content").innerHTML = monica;
+	if(document.getElementById("monica-message-content").innerHTML != ""){
+		let element = document.getElementById("monica-message-content");
+		var op = 1;  // initial opacity
+	    var timer = setInterval(function () {
+	        if (op <= 0.1){
+	            clearInterval(timer);
+	            element.style.display = 'none';
+	        }
+	        element.style.opacity = op;
+	        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+	        op -= op * 0.2;
+	    }, 50);
+	}
+	
+    setTimeout(function(){
+    	document.getElementById("monica-message-content").innerHTML = monica;
+    	var op = 0.1;  // initial opacity
+		element.style.display = 'block';
+		var timer = setInterval(function () {
+		    if (op >= 1){
+		        clearInterval(timer);
+		    }
+		    element.style.opacity = op;
+		    element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+		    op += op *0.1;
+		}, 50);
+    }, 1000);
 }
 
 

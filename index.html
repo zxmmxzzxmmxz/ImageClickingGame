@@ -18,12 +18,20 @@
   <script type="text/javascript" src="js/index.js"></script>
 </head>
 
-<body style="background-image:url('images/bbb.png');background-repeat: no-repeat;background-size: cover">
+<body style="background-image:url('images/bbb.png');background-repeat: no-repeat;background-size: cover;">
+  <audio autoplay loop id = "audio">
+      <source src="sound/startscreen.wav">
+  </audio>
   <h1 id="heading">The Secret Of Manor</h1>
-  <div> <img src="images/bg2.png" id="blood" alt="bg2.png"/></div>
-  <div id="click" type="button" data-toggle="modal" data-target="#exampleModalCenter">
-
+  <div> 
+    <img src="images/bg2.png" id="blood" alt="bg2.png"/>
   </div>
+
+
+   <div id = "instruction" class="message-box" data-toggle="modal" data-target="#exampleModalCenter" onclick="document.getElementById('audio').play();">Start</div>
+  <div id="click" type="button">
+  </div>
+
   </div>
 
 
@@ -37,9 +45,10 @@
           <div class = "absolute-main fancy-font">You are inherited Edward's Manor<br><br> Do you want to accep it?</div>
 
           <button type="button" class="btn btn-info absolute bottom right" id="toScene1">Accept</button>
+
       </div>
     </div>
   </div>
-
+  
 </body>
 </html>
